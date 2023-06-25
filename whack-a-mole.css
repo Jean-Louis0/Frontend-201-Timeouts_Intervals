@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.whack-a-mole {
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    width: 900px;
+    height: 600px;
+    margin-top: 40px;
+    margin-left: 250px;
+}
+
+.dot {
+    height: 100px;
+    margin-top: 70px;
+    margin-left: 100px;
+    width: 100px;
+
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transform: translate(-30%, -5%);
+    transition: background-color 0.5s;
+}
+
+.dot.active {
+    background-color: red;
+    cursor: pointer;
+}
+
+#score {
+    font-size: 24px;
+}
